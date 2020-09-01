@@ -1,0 +1,71 @@
+================================================
+Esto aplica solo para usuarios linux
+
+sudo systemctl start postgresql activar la bd
+sudo su - postgres
+psql
+alter user postgres with password 'root';
+exit
+================================================
+
+instalar postgres y pgadmin3
+crear servidor llamado ucla
+user:postgres password:root port:5432 dir:localhost
+crear dentro del servidor ucla, la base de datos nao
+
+ejecutar npm install
+
+luego
+ 
+/node_modules/.bin/sequelize init
+
+para la creacion de modelos
+paso 1
+node_modules/.bin/sequelize model:generate --name Category --attributes firstname:string,lastname:string,email:string
+ese es un ejemplo, alli van los campos asociados al modelo que desean crear, nombre de modelo y campos con tipo de datos
+
+paso 2
+agregar en la migracion correspondiente creada automaticamente, el campo 
+deletedAt: {
+                allowNull: true,
+                type: Sequelize.DATE
+            }
+ademas agregar todas las validaciones requeridas, asegurarse de agregar todos los campos como van, es complicado agregar luego
+o modificar las tablas, asi que recomendacion definan bien el modelo antes de hacer el comando que lo genera
+
+paso 3
+correr la migracion
+/node_modules/.bin/sequelize db:migrate
+
+
+para la configuracion de rutas, endpoints
+crear un archivo .js en el directorio routes, dicho archivo debe tener el nombre del modelo asociado en minuscula y singular
+alli crear todas las rutas correspondientes (get,post,put,delete, entre otras)
+importar el archivo de rutas en el archivo index.js dentro del mismo directorio (routes)
+las rutas deben llamar al controlador asociado al modelo. el controlador debe tener el nombre del modelo y ubicarlo en el directorio
+controllers, ademas, si la ruta lleva un middlewares, dichos metodos de validacion deben realizarse en el directorio middlewares
+
+por favor no modificar sin previa autorizacion los archivos del directorio config, tampoco modificar el archivo index que se encuentra
+en el directorio models
+
+en la carpeta seeders pueden crear los seeds que crean necesarios para datos de prueba
+
+para correr el proyecto pueden ejecutar npm run dev o nodemon app
+
+el archivo app.js tiene la conexion del servidor y la base de datos por favor no modificar ningun dato de ese archivo sin autorizacion
+
+finalmente si encuentran la manera de simplificar el codigo de los metodos, haganlo siempre y cuando funcione
+
+Recuerden al bajar el proyecto de gitlab, crear una rama con las iniciales de su nombre y modulo o tarea asignada
+por ejemplo op/crud/donationtype en mi caso si tuviera que subir el crud de prueba que estoy colocando en el proyecto base
+
+
+Para crear migraciones para modificar tablas ya existentes usen el comando  node_modules/.bin/sequelize migration:generate --name add_fields_model_nameModel
+el generará una migración en donde colocarán los campos o cambios que realizarán sobre las tablas
+
+node_modules/.bin/sequelize migration:generate --name add_fields_model_AppointmentType
+esto es para modificar migraciones o tablas ya existentes
+
+Para hacer registros en la base de datos automáticos, ir a la rama seeds, y correr el comando 
+npx sequelize-cli db:seed:all
+luego volver a la rama donde esten desarrollando, o en su defecto a la rama develop para los que están consumiendo

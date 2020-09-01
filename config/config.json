@@ -1,0 +1,36 @@
+{
+    "development": {
+        "username": "postgres",
+        "password": "root",
+        "database": "nao",
+        "host": "localhost",
+        "dialect": "postgres",
+        "omitNull": "true"
+    },
+    "test": {
+        "username": "postgres",
+        "password": "root",
+        "database": "nao",
+        "host": "localhost",
+        "dialect": "postgres",
+        "omitNull": "true"
+    },
+    "production": {
+        "username": "vxotjxalaronnd",
+        "password": "18d24df76c41a251c77be4c4c1e3752ab5cbf398498384e109efee57f094708e",
+        "database": "d34en879ggrd4n",
+        "host": "ec2-34-235-108-68.compute-1.amazonaws.com",
+        "dialect": "postgres",
+        "dialectOptions": {
+            "ssl": {
+                "rejectUnauthorized": false
+            }
+        },
+        "pool": {
+            "max": 5,
+            "min": 0,
+            "require": 30000,
+            "idle": 10000
+        }
+    }
+}
