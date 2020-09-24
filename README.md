@@ -29,5 +29,3 @@ REST API made to consume from web, mobile and desktop components, deployed in he
 https://arya-intranet.herokuapp.com/ Intranet
 https://arya-web.herokuapp.com/ Web
 https://api-nao-arya.herokuapp.com/ API REST
-
-Translated with www.DeepL.com/Translator (free version)
