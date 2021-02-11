@@ -530,7 +530,7 @@ module.exports = {
                 roleId: rol[0].id,
                 createdAt: new Date(),
                 updatedAt: new Date()
-            },{
+            }, {
                 status: true,
                 systemFunctionId: sysfun[91].id,
                 roleId: rol[0].id,
@@ -539,7 +539,7 @@ module.exports = {
             },
 
 
-           {
+            {
                 status: true,
                 systemFunctionId: sysfun[4].id,
                 roleId: rol[1].id,
@@ -1061,13 +1061,13 @@ module.exports = {
                 roleId: rol[1].id,
                 createdAt: new Date(),
                 updatedAt: new Date()
-            },{
+            }, {
                 status: true,
                 systemFunctionId: sysfun[91].id,
                 roleId: rol[1].id,
                 createdAt: new Date(),
                 updatedAt: new Date()
-            },  
+            },
 
 
 
@@ -1127,19 +1127,19 @@ module.exports = {
                 roleId: rol[2].id,
                 createdAt: new Date(),
                 updatedAt: new Date()
-            },{
+            }, {
                 status: true,
                 systemFunctionId: sysfun[31].id,
                 roleId: rol[2].id,
                 createdAt: new Date(),
                 updatedAt: new Date()
-            },{
+            }, {
                 status: true,
                 systemFunctionId: sysfun[32].id,
                 roleId: rol[2].id,
                 createdAt: new Date(),
                 updatedAt: new Date()
-            },{
+            }, {
                 status: true,
                 systemFunctionId: sysfun[33].id,
                 roleId: rol[2].id,
@@ -1232,31 +1232,31 @@ module.exports = {
                 roleId: rol[3].id,
                 createdAt: new Date(),
                 updatedAt: new Date()
-            },{
+            }, {
                 status: true,
                 systemFunctionId: sysfun[16].id,
                 roleId: rol[3].id,
                 createdAt: new Date(),
                 updatedAt: new Date()
-            },{
+            }, {
                 status: true,
                 systemFunctionId: sysfun[17].id,
                 roleId: rol[3].id,
                 createdAt: new Date(),
                 updatedAt: new Date()
-            },{
+            }, {
                 status: true,
                 systemFunctionId: sysfun[18].id,
                 roleId: rol[3].id,
                 createdAt: new Date(),
                 updatedAt: new Date()
-            },{
+            }, {
                 status: true,
                 systemFunctionId: sysfun[19].id,
                 roleId: rol[3].id,
                 createdAt: new Date(),
                 updatedAt: new Date()
-            },{
+            }, {
                 status: true,
                 systemFunctionId: sysfun[33].id,
                 roleId: rol[3].id,
@@ -1284,7 +1284,7 @@ module.exports = {
                 createdAt: new Date(),
                 updatedAt: new Date()
             },
-             {
+            {
                 status: true,
                 systemFunctionId: sysfun[47].id,
                 roleId: rol[3].id,
@@ -1497,37 +1497,37 @@ module.exports = {
                 roleId: rol[6].id,
                 createdAt: new Date(),
                 updatedAt: new Date()
-            },{
+            }, {
                 status: true,
                 systemFunctionId: sysfun[12].id,
                 roleId: rol[6].id,
                 createdAt: new Date(),
                 updatedAt: new Date()
-            },{
+            }, {
                 status: true,
                 systemFunctionId: sysfun[13].id,
                 roleId: rol[6].id,
                 createdAt: new Date(),
                 updatedAt: new Date()
-            },{
+            }, {
                 status: true,
                 systemFunctionId: sysfun[33].id,
                 roleId: rol[6].id,
                 createdAt: new Date(),
                 updatedAt: new Date()
-            },{
+            }, {
                 status: true,
                 systemFunctionId: sysfun[36].id,
                 roleId: rol[6].id,
                 createdAt: new Date(),
                 updatedAt: new Date()
-            },{
+            }, {
                 status: true,
                 systemFunctionId: sysfun[37].id,
                 roleId: rol[6].id,
                 createdAt: new Date(),
                 updatedAt: new Date()
-            },{
+            }, {
                 status: true,
                 systemFunctionId: sysfun[38].id,
                 roleId: rol[6].id,
@@ -1561,25 +1561,25 @@ module.exports = {
                 roleId: rol[6].id,
                 createdAt: new Date(),
                 updatedAt: new Date()
-            },{
+            }, {
                 status: true,
                 systemFunctionId: sysfun[43].id,
                 roleId: rol[6].id,
                 createdAt: new Date(),
                 updatedAt: new Date()
-            },{
+            }, {
                 status: true,
                 systemFunctionId: sysfun[44].id,
                 roleId: rol[6].id,
                 createdAt: new Date(),
                 updatedAt: new Date()
-            },{
+            }, {
                 status: true,
                 systemFunctionId: sysfun[45].id,
                 roleId: rol[6].id,
                 createdAt: new Date(),
                 updatedAt: new Date()
-            },{
+            }, {
                 status: true,
                 systemFunctionId: sysfun[46].id,
                 roleId: rol[6].id,
